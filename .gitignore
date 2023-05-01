@@ -1,8 +1,8 @@
 # Main application files
-matrix-informant
+/matrix-informant
+/conf/informant.yaml
 informant.db
 informant.png
-conf/informant.yaml
 
 # Mac OS X files
 .DS_Store
