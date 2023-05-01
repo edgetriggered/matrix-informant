@@ -11,11 +11,14 @@ A quick and dirty webhook service for the Matrix federated message store.
 # Usage
 
 ```bash
-go build
-./matrix-informant -c ./conf/informant.yaml
+make
+# edit ./conf/informant.sample.yaml and save as ./conf/informant.yaml
+./matrix-informant
 ```
 
-## cURL
+## Clients
+
+### cURL
 
 ```bash
 export IMG=$(base64 --wrap 0 /path/to/image.png)
@@ -23,7 +26,7 @@ curl http://localhost:9999 -X POST -H 'Content-Type: application/json' \
     -d "{\"channel\":\"\!roomid:home.server\", \"contentbytes\":\"$IMG\", \"contenttype\": \"image/png\", \"message\":\"This is a test.\", \"psk\": \"YourInformantPSKhere\"}"
 ```
 
-## Python
+### Python
 
 ```python
 import base64
