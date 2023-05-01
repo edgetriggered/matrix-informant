@@ -1,0 +1,11 @@
+bind: :9999
+homeserver: home.server
+username: informant
+password: password
+display: informant
+avatar: ./informant.png
+database:
+  path: ./informant.db
+  key: picklekey
+psk: nevergonnagiveyouup
+debug: false
